@@ -1,9 +1,10 @@
 
 {% extends "blog/base.html" %}
-{% load crispy_forms_tags %}
+<!-- {% load crispy_forms_tags %} -->
 {% block content %}
-	<div class="content-section">
-		<form method="post">
+			<h2>You Have Been Logged Out!</h2>
+	<!-- <div class="content-section"> -->
+		<!-- <form method="post">
 			{% csrf_token %}
 			<fieldset class="form-group">
 				<legend class="border-botton mb-4">
@@ -15,12 +16,12 @@
 			<div class="form-group">
 				<button class="btn-outline-info" type="submit">Sign Up</button>
 			</div>
-		</form>
-		<div class="border-up pt3">
-			<small class="text-muted">
-				Already Have an Account? <a class="ml-2" href="{% url 'login' %}">Sign In</a>
-			</small>
-		</div>
+		</form> -->
+			<div class="border-up pt3">
+				<small class="text-muted">
+					<a class="ml-2" href="{% url 'login' %}">LogIn Again</a>
+				</small>
+		<!-- </div> -->
 		
 	</div>
 {% endblock content %}
